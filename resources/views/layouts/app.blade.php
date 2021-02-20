@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Short Term Rental, Apartments, Homes | Tent</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -76,5 +76,29 @@
             @yield('content')
         </main>
     </div>
+
+    <script>
+        function userFunction() {
+            // Get the checkbox
+            const radioMember = document.getElementById("member");
+            const radioHost = document.getElementById("host");
+            // Get the output text
+            const textMember = document.getElementById("displayMember");
+            const textHost = document.getElementById("displayHost");
+
+            // If the checkbox is checked, display the output text
+            if (radioMember.checked == true) {
+                textMember.style.display = "block";
+                textHost.style.display = "none";
+            } else if (radioHost.checked == true) {
+                textHost.style.display = "block";
+                textMember.style.display = "none";
+            } else {
+                textMember.style.display = "none";
+                textHost.style.display = "none";
+            }
+        }
+
+    </script>
 </body>
 </html>

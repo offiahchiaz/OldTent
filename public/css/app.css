@@ -10944,3 +10944,14 @@ a.text-dark:focus {
   }
 }
 
+/* Personal styles */
+
+.message-info {
+  background: rgba(46,72,218,.1); 
+  display: none; 
+  border-radius: 6px; 
+  font-size: 10px; 
+  line-height: 14px; 
+  padding: 9px 14px; 
+  margin-bottom: 20px;
+}
