@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/email', function () {
+//     //Mail::to($request->user())->send(new MailableClass);
+//     Mail::to('email@email.com')->send(new WelcomeMail());
+
+//     return new WelcomeMail();
+// });
+
 Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('home');
