@@ -1,0 +1,83 @@
+#welcome-p {
+    display: block; 
+    margin-bottom: 38px;
+    margin-right: 0%;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0c0934;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#welcome-span {
+    font-weight: 700;
+    font-style: normal;
+    color: #62e2aa;
+}
+
+#welcome-div { 
+    width: 400px; 
+    height: 600px; 
+    background-image: url("/img/welcome2.png");
+    border-radius: 10px; 
+    background-position: 81.5%; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+#profile-div {
+    background-image: url("/img/undraw_profile.svg");
+    width: 60px;
+    height: 60px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+#profile-review {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5c5a74;
+    margin-bottom: 11px;
+}
+
+#profile-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #62e2aa;
+    margin-bottom: 0;
+}
+
+#member-designation {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #939292;
+    margin-bottom: 0;
+}
+
+#search-text {
+    height: 63px;
+}
+
+#button-addon2 {
+    background: #2e48da; 
+    color:#fff; 
+    height: 63px; 
+    width: 120px; 
+    font-weight: 500; 
+    font-size: 20px;
+}
+
+#user-testimonial {
+    padding-top: 150px;
+}
