@@ -43,10 +43,7 @@
 
                 <!-- Topbar -->
 
-
-                {{-- navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow --}}
-                <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4 static-top shadow" style="padding-bottom: 15px; margin-bottom: 20px;">
-                    {{-- <a class="navbar-brand" href="#">Tent</a> --}}
+                <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4 fixed-top" style="padding-bottom: 15px;">
                     <div style="padding-left: 100px;">
                         <a class="navbar-brand" href="/"><h4>Tent</h4></a>
                     </div>
@@ -85,7 +82,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container">
+                <div class="container" style="padding-top: 150px;">
 
                     <!-- Page Heading -->
                     {{-- <h1 class="h3 mb-4 text-gray-800">Blank Page</h1> --}}
@@ -125,12 +122,54 @@
                             
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
+                <!-- /.container -->
+
+                <div style="background: #fff; padding-top: 40px;">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-10 mb-4">
+                                <p id="p-whyTent_subtitle">Why Tent</p>
+
+                                <p id="p-whyTent_title">
+                                    Vibrant cities.<br>
+                                    Beautiful and move-in ready homes.
+                                </p>
+
+                                <p id="p-whyTent_text">
+                                    We offer you access to premium residential solutions, with as little hassle as possible. We do<br> 
+                                    what we can to help you get the best out of living in the city, no matter how short or long the<br> 
+                                    space between your stay.
+                                </p>
+                            </div>
+
+                            
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+
+                
 
             </div>
             <!-- End of Main Content -->
+
+            {{-- <div class="container bg-white">
+                <div class="row">
+                    <p id="p-whyTent_subtitle">Why Tent</p>
+                    <p id="p-whyTent_title">
+                        Vibrant cities.<br>
+                        Beautiful and move-in ready homes.
+                    </p>
+                    <p id="p-whyTent_text">
+                        We offer you access to premium residential solutions, with as little hassle as possible. We do 
+                        what we can to help you get the best out of living in the city, no matter how short or long the 
+                        space between your stay.
+                    </p>
+                </div>
+            </div> --}}
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">

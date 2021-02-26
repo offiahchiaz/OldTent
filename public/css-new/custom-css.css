@@ -88,3 +88,32 @@
     outline: none;
     box-shadow: none;
 }
+
+#p-whyTent_subtitle {
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-feature-settings: "cpsp"on;
+    color: #62e2aa;
+}
+
+#p-whyTent_title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0f0c3d;
+    margin-bottom: 40px;
+    
+}
+
+#p-whyTent_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #413e5f;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
