@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Short Term Rental, Apartments, Homes | Tent</title>
+    <title>Tent | Easier living solutions in Nigeria</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,8 +19,12 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+        {{-- <link rel="preconnect" href="https://fonts.gstatic.com"> --}}
+        {{-- <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&display=swap" rel="stylesheet">  --}}
+
     <!-- Custom styles for this template-->
     <link href="css-new/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css-new/custom-css.css" rel="stylesheet">
 
 </head>
 
@@ -42,6 +46,7 @@
                     <div class="container" style="padding-left: 200px;">
                         <a class="navbar-brand" href="/"><h4>Tent</h4></a>
                     </div>
+                   
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -73,13 +78,105 @@
                     </ul>
 
                 </nav>
+
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Tent</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item no-arrow">
+                            <a class="nav-link" style="color: #413e5f;" href="{{ url('/apartments') }}">Apartments</a>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        @if (Route::has('login'))
+                            @auth
+                                <li class="nav-item no-arrow">
+                                    <a class="nav-link" style="color: #413e5f;" href="{{ url('/home') }}">Home</a>
+                                </li>
+                                
+                                @else
+                                    <li class="nav-item no-arrow">
+                                        <a  class="nav-link" style="color: #413e5f;" href="{{ route('login') }}">Login</a>
+                                    </li>
+                                    @if (Route::has('register'))
+                                    <li class="nav-item no-arrow">
+                                        <a class="nav-link" style="color: #413e5f;" href="{{ route('register') }}">Register</a>
+                                    </li>
+                                    @endif
+                            @endauth
+                        @endif
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    {{-- <h1 class="h3 mb-4 text-gray-800">Blank Page</h1> --}}
+
+                    <div class="row mb-4">
+                        <div class="col-md-8 mb-4 pr-10">
+                           
+
+                            <div>
+                                <p id="welcome-p">
+                                    Find the most<br>
+                                    comfortable living spaces
+                                    <span id="welcome-span">.</span>
+                                </p>
+
+                                <div class="input-group mb-3">
+                                    <input type="text" id="search-text" class="form-control" placeholder="Where would you love to stay?" 
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div id="user-testimonial">
+                                <div id="profile-div"></div>
+                                <p id="profile-review">Thoroughly enjoyed my Spleet space, ticks all the boxes. 😁</p>
+                                <p id="profile-name">Ifeanyi</p>
+                                <small id="member-designation">Tent member</small>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <div id="welcome-div"></div>
+                            {{-- <img class="rounded" src="{{ asset('img/welcome2.png')}}" alt="" width="400" height="600"> --}}
+                            
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->
