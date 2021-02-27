@@ -144,3 +144,52 @@
     color: #413e5f;
     margin-bottom: 0;
 }
+
+.step-number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #0f0c3d;
+    margin-right: 10px;
+}
+
+.step-line {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #5c5a74;
+}
+
+.step-detail {
+    padding: 30px;
+    height: 340px;
+    background: #0f0c3d;
+    border-radius: 10px;
+}
+
+.detail-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #62e2aa;
+    margin-bottom: 20px;
+    margin-top: 23px;
+}
+
+.detail-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.step-group {
+    display: flex; 
+    -webkit-box-align: center; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    margin-bottom: 40px;
+}
