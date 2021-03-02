@@ -229,31 +229,16 @@
                     </div>
                 </div>
 
-                
-
             </div>
             <!-- End of Main Content -->
 
-            {{-- <div class="container bg-white">
-                <div class="row">
-                    <p id="p-whyTent_subtitle">Why Tent</p>
-                    <p id="p-whyTent_title">
-                        Vibrant cities.<br>
-                        Beautiful and move-in ready homes.
-                    </p>
-                    <p id="p-whyTent_text">
-                        We offer you access to premium residential solutions, with as little hassle as possible. We do 
-                        what we can to help you get the best out of living in the city, no matter how short or long the 
-                        space between your stay.
-                    </p>
-                </div>
-            </div> --}}
-
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+            <footer class="sticky-footer" style="margin-top: 100px; background: #0f0c3d;">
+                <div class="container my-auto">    
+                    <div class="copyright my-auto" >
+                        <span style="font-weight: 500; font-size: 12px; line-height: 18px; color: #fff; margin-right: 30px;">&copy; Tent 2021</span>
+                        <span  style="font-weight: 500; font-size: 12px; line-height: 18px; color: #fff; margin-right: 50px;">Privacy</span>
+                        <span  style="font-weight: 500; font-size: 12px; line-height: 18px; color: #fff; margin-right: 50px;">Terms</span>
                     </div>
                 </div>
             </footer>
