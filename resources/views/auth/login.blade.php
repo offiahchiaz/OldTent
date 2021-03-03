@@ -79,6 +79,8 @@
 
 @extends('layouts.new-app')
 
+{{-- @section('page-background', 'bg-gradient-primary') --}}
+
 @section('content')
 
 <div class="container">

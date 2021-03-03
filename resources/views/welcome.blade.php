@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tent | Easier living solutions in Nigeria</title>
+    <title>Short Term Rental, Apartments, Homes | @yield('title', 'Tent')</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,7 +62,7 @@
                         @if (Route::has('login'))
                             @auth
                                 <li class="nav-item no-arrow">
-                                    <a class="nav-link" style="color: #413e5f;" href="{{ url('/home') }}">Home</a>
+                                    <a class="nav-link" style="color: #413e5f;" href="{{ route('dashboard') }}">Home</a>
                                 </li>
                                 
                                 @else
