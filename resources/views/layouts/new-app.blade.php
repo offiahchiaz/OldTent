@@ -19,6 +19,7 @@
 
         <!-- Custom styles for this template-->
         <link href="css-new/sb-admin-2.min.css" rel="stylesheet">
+        <link href="css-new/custom-css.css" rel="stylesheet">
 
     </head>
     <body class="bg-gradient-primary">

@@ -189,54 +189,11 @@
                                 @enderror
 
                             </div>
-                            {{-- <div class="form-group row">
-
-                                @error('user_status')
-                                    <p style="width: 100%; margin-top: 0.25rem; font-size: 80%; color: #e3342f;" role="alert">
-                                        <strong>
-                                            {{ $message }}
-                                        </strong>
-                                    </p>
-                                @enderror
-                                <ul class="list-group">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <label for="member">
-                                            <li class="list-group-item">
-                                                <input type="radio" class="form-control-user" name="user_status"
-                                                {{ old('user_status') == 'member' ? 'checked' : '' }}  
-                                                id="member" value="member" onclick="userFunction()">
-                                                A member 
-                                            </li>
-                                        </label>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <label for="host">
-                                            <li class="list-group-item">
-                                                <input type="radio" class="form-control form-control-user" name="user_status"
-                                                {{ old('user_status') == 'host' ? 'checked' : '' }}  
-                                                id="host" value="host" onclick="userFunction()">
-                                                A host 
-                                            </li>
-                                        </label>
-                                    </div>
-                                </ul>
-
-                                <div id="displayMember" class="message-info">
-                                    As a Tent member, you can view and subscribe to spaces listed on Tent. 
-                                    Additionally, you can switch this account to access host benefits.
-                                </div>
-
-                                <div id="displayHost" class="message-info">
-                                    As a Tent Host, you can list spaces and earn on Tent. 
-                                    Additionally, you can switch this account to access member benefits.
-                                </div>
-                            </div> --}}
+                            
 
                             <div class="form-group row">
-                                {{-- <label for="user_status" class="col-md-4 col-form-label text-md-right">{{ __('Join Tent As?') }}</label> --}}
     
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
                                     @error('user_status')
                                         <p style="width: 100%; margin-top: 0.25rem; font-size: 80%; color: #e3342f;" role="alert">
                                             <strong>
@@ -244,26 +201,29 @@
                                             </strong>
                                         </p>
                                     @enderror
-                                    <ul class="list-group d-flex justify-content-between">
-                                        <label for="member">
-                                            <li class="list-group-item" style="font-size: 0.9rem; border-radius: 10rem; padding: 0.8rem 1rem;">
-                                                <input type="radio" name="user_status"
-                                                {{ old('user_status') == 'member' ? 'checked' : '' }}  
-                                                id="member" value="member" onclick="userFunction()">
-                                                A member 
-                                            </li>
-                                        </label>
-                                        <label for="host">
+                                    <ul class="list-group list-group-horizontal-sm">
+                                        
+                                            <label class="col-sm-6 mb-3 ml-0 mr-3 mb-sm-0" for="member">
+                                                <li class="list-group-item" style="font-size: 0.9rem; border-radius: 10rem; padding: 0.8rem 1rem;">
+                                                    <input type="radio" name="user_status"
+                                                    {{ old('user_status') == 'member' ? 'checked' : '' }}  
+                                                    id="member" value="member" onclick="userFunction()">
+                                                    As a member 
+                                                </li>
+                                            </label>
+                                        
+                                        <label class="col-sm-6" for="host">
                                             <li class="list-group-item"  style="font-size: 0.9rem; border-radius: 10rem; padding: 0.8rem 1rem;">
                                                 <input type="radio" name="user_status"
                                                 {{ old('user_status') == 'host' ? 'checked' : '' }}  
                                                 id="host" value="host" onclick="userFunction()">
-                                                A host 
+                                                As a host 
                                             </li>
                                         </label>
+                                       
                                     </ul>
     
-                                    {{-- <div id="displayMember" class="message-info">
+                                    <div id="displayMember" class="message-info">
                                         As a Tent member, you can view and subscribe to spaces listed on Tent. 
                                         Additionally, you can switch this account to access host benefits.
                                     </div>
@@ -271,7 +231,7 @@
                                     <div id="displayHost" class="message-info">
                                         As a Tent Host, you can list spaces and earn on Tent. 
                                         Additionally, you can switch this account to access member benefits.
-                                    </div> --}}
+                                    </div>
                                 </div>
                             </div>
 

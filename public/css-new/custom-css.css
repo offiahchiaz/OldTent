@@ -193,3 +193,15 @@
     flex-wrap: nowrap; 
     margin-bottom: 40px;
 }
+
+.message-info {
+    background: rgba(46,72,218,.1); 
+    display: none; 
+    /* border-radius: 6px;  */
+    border-radius: 10rem;
+    font-size: 10px; 
+    line-height: 14px; 
+    padding: 9px 14px; 
+    margin-bottom: 10px;
+    
+  }
