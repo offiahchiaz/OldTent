@@ -1,4 +1,4 @@
-@extends('layouts.signedin-app')
+@extends('admin.layouts.signedin-app')
 
 {{-- @section('content')
 <div class="container">
@@ -29,7 +29,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('includes.sidebar')
+        @include('admin.includes.sidebar')
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -39,7 +39,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                @include('includes.navbar')
+                @include('admin.includes.navbar')
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
