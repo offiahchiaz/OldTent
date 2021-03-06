@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/email', function () {
+//     //Mail::to($request->user())->send(new MailableClass);
+//     Mail::to('email@email.com')->send(new WelcomeMail());
+
+//     return new WelcomeMail();
+// });
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Admin Routes
+Route::get('/admin-dashboard', 'Admin\DashboardController@index')->name('admin-dashboard');
+
+
+// Members Routes
+Route::get('/host-dashboard', 'Members\DashboardController@index')->name('member-dashboard');

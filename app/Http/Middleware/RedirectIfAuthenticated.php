@@ -18,8 +18,20 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
+
         if (Auth::guard($guard)->check()) {
-            return redirect(RouteServiceProvider::HOME);
+
+            $user_status = Auth::user()->user_status;
+
+            if ($user_status == 'admin') {
+                return '/admin-dashboard';
+            } elseif ($user_status == 'host') {
+                return '/host-dashboard';
+            } elseif ($user_status == 'member') {
+                return '/host-dashboard';
+            }
+            
+            // return redirect(RouteServiceProvider::HOME);
         }
 
         return $next($request);
